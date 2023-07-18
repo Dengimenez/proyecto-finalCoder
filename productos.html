@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Productos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css"/> 
+</head>
+<body>
+    <!-- <header class="menu">
+        <nav >
+           <div class="logo"> 
+               <img src="./img/logo.png" alt="logo">
+           </div>
+               <ul>
+                   <li> <a href="./index.html"> Home</a></li>
+                   <li> <a href="./productos.html"> Productos</a></li>
+                   <li> <a href="./contacto.html"> Contacto</a></li>
+                   
+               </ul>
+           </nav>  
+       </header> -->
+
+<body>
+        <main>
+            <input type="text" id="inputBuscar" value="" placeholder="Buscar articulo.."/>
+            <div id= "productos"></div>
+        </main>
+    
+        <section class="ocultar">
+            <h1> <span id="cantidadProductos">0</span></h1>
+            <div id="carrito"></div>
+            <h3>Total : $<span id="totalCarrito">0</span></h3>
+            <a href="#" id="botonComprar" class="btn btnComprar oculto"> Comprar</a>
+        </section>
+    
+    <footer class="pie-pagina">
+     
+        <div class="grupo-2">
+
+         <small>© 2023 <b> HOLIC </b> - Todos los Derechos Reservados.</small>
+
+         <p> CREADO POR DENISE GIMENEZ </p>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
