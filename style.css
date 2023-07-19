@@ -1,5 +1,5 @@
 /* pagina inicial navbar estilos*/
- * {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -131,7 +131,7 @@ section {
 }
 
 
-section h1 {
+#btn-cart {
   position: absolute;
   top: 20px;
   right: 360px;
@@ -140,11 +140,12 @@ section h1 {
   height: 50px;
   border-radius: 10px;
   cursor: pointer;
-  color: rgba(244, 241, 241, 0.893);
+  color: #fff;
   box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.2);
-  /* background: url("img/cart.png") center center no-repeat rgb(137, 137, 154); */
+  text-align: center;
 }
-section h1 span {
+
+#cantidadProductos {
   display: block;
   background-color: rgb(0, 0, 0);
   border-radius: 150px;
@@ -154,11 +155,17 @@ section h1 span {
   font-size: 14px;
   margin: -10px 0 0 30px;
 }
-section h3 {
+
+.cart-container {
+  display: block;
+}
+
+.cart-container  h3 {
   padding-top: 10px;
   text-align: center;
   font-size: 30px;
 }
+
 .btn {
   color: white;
   background-color: rgb(0, 0, 0);
@@ -235,9 +242,9 @@ section .ocultar {
   border: 1px solid black;
   box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.2);
 }
- .oculto {
+.oculto {
   display: none;
-} 
+}
 
 
 

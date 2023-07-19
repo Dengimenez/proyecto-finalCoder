@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function(){ 
 
     // Clase Producto
@@ -172,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function(){
       const spanCantidadProductos = document.querySelector("#cantidadProductos");
       const spanTotalCarrito = document.querySelector("#totalCarrito");
       const inputBuscar = document.querySelector("#inputBuscar");
-      const botonCarrito = document.querySelector("section.ocultar h1");
+      const botonCarrito = document.querySelector("#btn-cart");
       const botonComprar = document.querySelector("#botonComprar");
       
       // Cargar productos en el DOM
@@ -217,8 +216,8 @@ document.addEventListener('DOMContentLoaded', function(){
       });
       
       // Evento para comprar (Sweet Alert)
-      botonComprar.addEventListener("click", (event) => {
-        event.preventDefault();
+      botonComprar.addEventListener("click", () => {
+
         Swal.fire({
           title: "¡Su compra ha sido realizada con exito!",
           text: "Verifica tu correo electronico, enviaremos la factura electronica de la compra",
@@ -230,25 +229,21 @@ document.addEventListener('DOMContentLoaded', function(){
         document.querySelector("section").classList.add("ocultar");
       });
     
-    
-    });
-    
-    // este es un cambio nuevo
-     const botonComprar = document.querySelector("#botonComprar");
-     const seccionCarrito = document.querySelector(".ocultar");
-    
-     botonComprar.addEventListener("click", function(event) {
-       event.preventDefault();
-    
-      // Resto del codigo para la compra...
-    
-       seccionCarrito.style.display = "none";
-     });
-    
-    // Agregar el siguiente codigo para mostrar la seccion carrito nuevamente
-     const botonCarrito = document.querySelector("h1");
-     botonCarrito.addEventListener("click", function() {
-       seccionCarrito.style.display = "block";
+      var showCart = true;
+
+      botonCarrito.addEventListener("click", () => {
+        var sectionCart = document.querySelector(".cart-container");
+
+        if(showCart) {
+          sectionCart.style.display = "none";
+          botonCarrito.style.right = "12px"
+          showCart = false;
+        }else {
+          sectionCart.style.display = "block";
+          botonCarrito.style.right = "360px";
+          showCart = true;
+        }
+      })
     });
 
     
