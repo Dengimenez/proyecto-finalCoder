@@ -15,59 +15,19 @@ document.addEventListener('DOMContentLoaded', function(){
       class BaseDeDatos {
         constructor() {
           this.productos = [];
-          this.agregarRegistro(1, "Remera", 5600, "Indumentaria", "remera1.png");
-          this.agregarRegistro(2, "Remera", 2000, "Indumentaria", "remera2.png");
-          this.agregarRegistro(3, "Remera", 3800, "Indumentaria", "remera3.png");
-          this.agregarRegistro(4, "Remera", 6800, "Indumentaria", "remera4.png");
-          this.agregarRegistro(5, "jogging", 6000, "Indumentaria", "jogging1.png");
-          this.agregarRegistro(6, "jogging", 6000, "Indumentaria", "jogging2.png");
-          this.agregarRegistro(7, "jogging", 6000, "Indumentaria", "jogging3.png");
-          this.agregarRegistro(8, "Mochila", 1500, "Marroquineria", "cartera.png");
-          this.agregarRegistro(9, "Camperas", 23000, "Indumentaria", "campera1.png");
-          this.agregarRegistro(10, "Camperas", 12000, "Indumentaria", "campera2.png");
-          this.agregarRegistro(11, "Camperas", 20000, "Indumentaria", "campera3.png");
-          this.agregarRegistro(12, "Camperas", 15000, "Indumentaria", "campera4.png");
-          this.agregarRegistro(13, "Camperas", 15000, "Indumentaria", "campera5.png");
-          this.agregarRegistro(14, "Camperas", 15000, "Indumentaria", "campera6.png");
-          this.agregarRegistro(15, "Gorro", 1000, "Accesorios", "gorro1.png");
-          this.agregarRegistro(16, "Gorro", 1000, "Accesorios", "gorro2.png");
-          this.agregarRegistro(17, "Bufanda", 200, "Accesorios", "bufanda1.png");
-          this.agregarRegistro(18, "Bufanda", 200, "Accesorios", "bufanda1.png");
-          this.agregarRegistro(19, "Medias", 200, "Accesorios", "medias.png");
-          this.agregarRegistro(20, "Medias", 200, "Accesorios", "medias1.png");
-          this.agregarRegistro(21, "Medias", 200, "Accesorios", "medias2.png");
-          this.agregarRegistro(22, "Medias", 200, "Accesorios", "medias3.png");
-          this.agregarRegistro(23, "Medias", 200, "Accesorios", "medias4.png");
-          this.agregarRegistro(24, "Pollera", 3000, "Indumentaria", "pollera1.png");
-          this.agregarRegistro(25, "Pollera", 3000, "Indumentaria", "pollera2.png");
-          this.agregarRegistro(26, "Pollera", 3000, "Indumentaria", "pollera3.png");
-          this.agregarRegistro(27, "Buzos", 4000, "Indumentaria", "buzo1.png");
-          this.agregarRegistro(28, "Buzos", 6000, "Indumentaria", "buzo2.png");
-          this.agregarRegistro(29, "Buzos", 5000, "Indumentaria", "buzo3.png");
-          this.agregarRegistro(30, "Buzos", 6000, "Indumentaria", "buzo4.png");
-          this.agregarRegistro(31, "Buzos", 4000, "Indumentaria", "buzo5.png");
-          this.agregarRegistro(32, "Buzos", 8000, "Indumentaria", "buzo6.png");
-          this.agregarRegistro(33, "Buzos", 9000, "Indumentaria", "buzo7.png");
-          this.agregarRegistro(34, "Buzos", 4000, "Indumentaria", "buzo8.png");
-          this.agregarRegistro(35, "Buzos", 4500, "Indumentaria", "buzo9.png");
-          this.agregarRegistro(36, "Buzos", 4500, "Indumentaria", "buzo10.png");
-          this.agregarRegistro(37,"Jeans", 10000, "Indumentaria", "jeans1.png");
-          this.agregarRegistro(38,"Jeans Oversize", 11000, "Indumentaria", "jeans2.png"); 
-          this.agregarRegistro(39,"Jeans Mom", 15000, "Indumentaria", "jeans3.png");
-          this.agregarRegistro(40,"Jeans", 11000, "Indumentaria", "jeans4.png");
-          this.agregarRegistro(41, "Bikini", 200, "Ropa Interior", "bikini1.png");
-          this.agregarRegistro(42, "Bikini", 200, "Ropa Interior", "bikini2.png");
+        
         }
       
-        agregarRegistro(id, nombre, precio, categoria, imagen = false) {
-          const producto = new Producto(id, nombre, precio, categoria, imagen);
-          this.productos.push(producto);
-        }
-      
-        traerRegistros() {
+        async traerRegistros() {
+        const response = await fetch("./productos.json");
+        this.productos = await response.json();
           return this.productos;
         }
-      
+        
+        registrosPorCategoria(categoria) {
+            return this.productos.filter((producto) => producto.categoria == categoria);
+        }
+
         registroPorId(id) {
           return this.productos.find((producto) => producto.id === id);
         }
@@ -173,7 +133,18 @@ document.addEventListener('DOMContentLoaded', function(){
       const inputBuscar = document.querySelector("#inputBuscar");
       const botonCarrito = document.querySelector("#btn-cart");
       const botonComprar = document.querySelector("#botonComprar");
+      const botonesCategorias = document.querySelectorAll(".btnCategoria");
       
+      botonesCategorias.forEach((boton) => {
+        boton.addEventListener("click" , (event) => {
+            event.preventDefault();
+            const productosPorCategoria = bd.registrosPorCategoria(boton.innerText);
+            cargarProductos(productosPorCategoria);
+        });
+      });
+
+      
+
       // Cargar productos en el DOM
       function cargarProductos(productos) {
         divProductos.innerHTML = "";
@@ -206,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function(){
       const carrito = new Carrito();
       
       // Cargar productos al iniciar la pagina
-      cargarProductos(bd.traerRegistros());
+      bd.traerRegistros().then((productos) => cargarProductos(productos));
       
       // Evento al buscar productos
       inputBuscar.addEventListener("keyup", () => {

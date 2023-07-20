@@ -140,7 +140,7 @@ section {
   height: 50px;
   border-radius: 10px;
   cursor: pointer;
-  color: #fff;
+  color: #ffffff;
   box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
@@ -204,7 +204,7 @@ section .ocultar {
 
 #productos {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   height: auto;
@@ -233,7 +233,9 @@ section .ocultar {
   margin: 20px 0;
 }
 .producto .imagen img {
-  max-height: 150px;
+   /* max-height: 150px;  */
+  height: 250px;
+  width: 250px;
 }
 .btnComprar {
   margin-top: 30px;
@@ -342,4 +344,28 @@ footer .pie-pagina .grupo-2{
   color: #ffffff;
   font-size: 16px;
   padding-top: 25px;
+  }
+
+  #categorias{
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+
+  #categorias li{
+    list-style: none;
+    display: inline-block;
+    flex-grow: 1; /* Permite que los elementos li ocupen todo el espacio disponible */
+    margin: 0 5px; /* Agrega espaciado entre los elementos li */
+  }
+  #categorias li .btnCategoria{
+    display: inline-block;
+    padding: 20px 30px; 
+  }
+  #categorias li .btnCategoria:hover{
+    background-color: white;
+    transition: background-color 1s;
   }

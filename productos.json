@@ -1,0 +1,332 @@
+[
+    {
+        "id": 1,
+        "nombre":"Buzos",
+        "precio":6000,
+        "categoria":"Indumentaria",
+        "imagen":"buzo1.png"
+    },
+    {
+        "id": 2,
+        "nombre":"Buzos",
+        "precio":6000,
+        "categoria":"Indumentaria",
+        "imagen":"buzo2.png"
+    },
+    {
+        "id": 3,
+        "nombre":"Buzos",
+        "precio":6000,
+        "categoria":"Indumentaria",
+        "imagen":"buzo3.png"
+    },
+    {
+        "id": 4,
+        "nombre":"Buzos",
+        "precio":6000,
+        "categoria":"Indumentaria",
+        "imagen":"buzo4.png"
+    },
+    {
+        "id": 5,
+        "nombre":"Buzos",
+        "precio":6000,
+        "categoria":"Indumentaria",
+        "imagen":"buzo5.png"
+    },
+    {
+        "id": 6,
+        "nombre":"Buzos",
+        "precio":6000,
+        "categoria":"Indumentaria",
+        "imagen":"buzo6.png"
+    },
+    {
+        "id": 7,
+        "nombre":"Buzos",
+        "precio":6000,
+        "categoria":"Indumentaria",
+        "imagen":"buzo7.png"
+    },
+    {
+        "id": 8,
+        "nombre":"Buzos",
+        "precio":6000,
+        "categoria":"Indumentaria",
+        "imagen":"buzo8.png"
+    },
+    {
+        "id": 9,
+        "nombre":"Buzos",
+        "precio":6000,
+        "categoria":"Indumentaria",
+        "imagen":"buzo9.png"
+    },
+    {
+        "id": 10,
+        "nombre":"Buzos",
+        "precio":6000,
+        "categoria":"Indumentaria",
+        "imagen":"buzo10.png"
+    },
+    {
+        "id": 11,
+        "nombre":"Jeans",
+        "precio":10000,
+        "categoria":"Indumentaria",
+        "imagen":"jeans1.png"
+    },
+    {
+        "id": 12,
+        "nombre":"Jeans Oversize",
+        "precio":11000,
+        "categoria":"Indumentaria",
+        "imagen":"jeans2.png"
+    },
+    {
+        "id": 13,
+        "nombre":"Jeans Mom",
+        "precio":15000,
+        "categoria":"Indumentaria",
+        "imagen":"jeans3.png"
+    },
+    {
+        "id": 14,
+        "nombre":"Jeans",
+        "precio":11000,
+        "categoria":"Indumentaria",
+        "imagen":"jeans4.png"
+    },
+    {
+        "id": 15,
+        "nombre":"Remera",
+        "precio":5000,
+        "categoria":"Indumentaria",
+        "imagen":"remera1.png"
+    },
+    {
+        "id": 16,
+        "nombre":"Remera",
+        "precio":5000,
+        "categoria":"Indumentaria",
+        "imagen":"remera2.png"
+    },
+    {
+        "id": 17,
+        "nombre":"Remera",
+        "precio":5000,
+        "categoria":"Indumentaria",
+        "imagen":"remera3.png"
+    },
+    {
+        "id": 18,
+        "nombre":"Remera",
+        "precio":5000,
+        "categoria":"Indumentaria",
+        "imagen":"remera4.png"
+    },
+    {
+        "id": 19,
+        "nombre":"Jogging",
+        "precio":6000,
+        "categoria":"Indumentaria",
+        "imagen":"jogging1.png"
+    },
+    {
+        "id": 20,
+        "nombre":"Jogging",
+        "precio":6000,
+        "categoria":"Indumentaria",
+        "imagen":"jogging2.png"
+    },
+    {
+        "id": 21,
+        "nombre":"Jogging",
+        "precio":6000,
+        "categoria":"Indumentaria",
+        "imagen":"jogging3.png"
+    },
+    {
+        "id": 22,
+        "nombre":"Mochila",
+        "precio":1500,
+        "categoria":"Marroquineria",
+        "imagen":"cartera.png"
+    },
+    {
+        "id": 23,
+        "nombre":"Campera",
+        "precio":23000,
+        "categoria":"Indumentaria",
+        "imagen":"campera1.png"
+    },
+    {
+        "id": 24,
+        "nombre":"Campera",
+        "precio":23000,
+        "categoria":"Indumentaria",
+        "imagen":"campera2.png"
+    },
+    {
+        "id": 25,
+        "nombre":"Campera",
+        "precio":23000,
+        "categoria":"Indumentaria",
+        "imagen":"campera3.png"
+    },
+    {
+        "id": 26,
+        "nombre":"Campera",
+        "precio":23000,
+        "categoria":"Indumentaria",
+        "imagen":"campera4.png"
+    },
+    {
+        "id": 27,
+        "nombre":"Campera",
+        "precio":23000,
+        "categoria":"Indumentaria",
+        "imagen":"campera5.png"
+    },
+    {
+        "id": 28,
+        "nombre":"Campera",
+        "precio":23000,
+        "categoria":"Indumentaria",
+        "imagen":"campera6.png"
+    },
+    {
+        "id": 29,
+        "nombre":"Gorro",
+        "precio":1000,
+        "categoria":"Accesorios",
+        "imagen":"gorro1.png"
+    },
+    {
+        "id": 30,
+        "nombre":"Gorro",
+        "precio":1000,
+        "categoria":"Accesorios",
+        "imagen":"gorro2.png"
+    },
+    {
+        "id": 31,
+        "nombre":"Bufanda",
+        "precio":200,
+        "categoria":"Accesorios",
+        "imagen":"bufanda1.png"
+    },
+    {
+        "id": 32,
+        "nombre":"Bufanda",
+        "precio":200,
+        "categoria":"Accesorios",
+        "imagen":"bufanda2.png"
+    },
+    {
+        "id": 33,
+        "nombre":"Medias",
+        "precio":200,
+        "categoria":"Accesorios",
+        "imagen":"medias.png"
+    },
+    {
+        "id": 34,
+        "nombre":"Medias",
+        "precio":200,
+        "categoria":"Accesorios",
+        "imagen":"medias1.png"
+    },
+    {
+        "id": 35,
+        "nombre":"Medias",
+        "precio":200,
+        "categoria":"Accesorios",
+        "imagen":"medias2.png"
+    },
+    {
+        "id": 36,
+        "nombre":"Medias",
+        "precio":200,
+        "categoria":"Accesorios",
+        "imagen":"medias3.png"
+    },
+    {
+        "id": 37,
+        "nombre":"Medias",
+        "precio":200,
+        "categoria":"Accesorios",
+        "imagen":"medias4.png"
+    },
+    {
+        "id": 38,
+        "nombre":"Pollera",
+        "precio":5300,
+        "categoria":"Indumentaria",
+        "imagen":"pollera1.png"
+    },
+    {
+        "id": 39,
+        "nombre":"Pollera",
+        "precio":5300,
+        "categoria":"Indumentaria",
+        "imagen":"pollera2.png"
+    },
+    {
+        "id": 40,
+        "nombre":"Pollera",
+        "precio":5300,
+        "categoria":"Indumentaria",
+        "imagen":"pollera3.png"
+    },
+   
+    {
+        "id": 41,
+        "nombre":"Bikini",
+        "precio":6000,
+        "categoria":"Ropa Interior",
+        "imagen":"bikini1.png"
+    },
+    {
+        "id": 42,
+        "nombre":"Bikini",
+        "precio":6000,
+        "categoria":"Ropa Interior",
+        "imagen":"bikini2.png"
+    },
+    {
+        "id": 43,
+        "nombre":"Perfume",
+        "precio":6000,
+        "categoria":"Perfumes",
+        "imagen":"perfume1.jpeg"
+    },
+    {
+        "id": 44,
+        "nombre":"Perfume",
+        "precio":6000,
+        "categoria":"Perfumes",
+        "imagen":"perfume2.jpeg"
+    },
+    {
+        "id": 45,
+        "nombre":"Perfume",
+        "precio":6000,
+        "categoria":"Perfumes",
+        "imagen":"perfume3.jpeg"
+    },
+    {
+        "id": 46,
+        "nombre":"Perfume",
+        "precio":6000,
+        "categoria":"Perfumes",
+        "imagen":"perfume4.jpeg"
+    },
+    {
+        "id": 47,
+        "nombre":"Perfume",
+        "precio":6000,
+        "categoria":"Perfumes",
+        "imagen":"perfume5.png"
+    }
+]

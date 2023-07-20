@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
-    <!-- <header class="menu">
+     <header class="menu">
         <nav >
            <div class="logo"> 
                <img src="./img/logo.png" alt="logo">
@@ -26,18 +26,26 @@
                    
                </ul>
            </nav>  
-       </header> -->
+       </header> 
 
     <body>
         <main>
             <input type="text" id="inputBuscar" value="" placeholder="Buscar articulo.."/>
+            <ul id="categorias">
+                
+                <li><a href="#" class="btn btnCategoria">Indumentaria</a></li>
+                <li><a href="#" class="btn btnCategoria">Marroquineria</a></li>
+                <li><a href="#" class="btn btnCategoria">Accesorios</a></li>
+                <li><a href="#" class="btn btnCategoria">Ropa Interior</a></li>
+                <li><a href="#" class="btn btnCategoria">Perfumes</a></li> 
+            </ul>
             <div id= "productos"></div>
         </main>
 
         <!-- BOTON ABRIR/CERRAR CARRITO-->
         <span id="btn-cart">
             <span id="cantidadProductos">0</span>
-            <i class="fa fa-shopping-cart" style="font-size:26px; color: #262626;"></i>
+            <i class="fa fa-shopping-cart" style="font-size:26px; color: #ffffff;"></i>
         </span>
 
         <!-- CARRITO -->
